@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f6fb;
+    color: #17151f;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    color: #7c3aed;
+}
+
+p {
+    color: #777481;
+}
