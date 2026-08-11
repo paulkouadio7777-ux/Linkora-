@@ -321,3 +321,111 @@ a {
         min-width: 175px;
     }
     }
+
+/* =========================
+   CORRECTION MOBILE LINKORA
+========================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.composer {
+    width: 100%;
+    min-width: 0;
+}
+
+.composer-content {
+    min-width: 0;
+    width: 100%;
+}
+
+.post-input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.post-actions {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.post-actions::-webkit-scrollbar {
+    display: none;
+}
+
+.post-actions button {
+    flex: 0 0 auto;
+}
+
+.moments {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.moments::-webkit-scrollbar {
+    display: none;
+}
+
+.moment {
+    flex: 0 0 180px;
+}
+
+@media (max-width: 600px) {
+
+    .main-content {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .composer {
+        gap: 10px;
+    }
+
+    .avatar {
+        flex-shrink: 0;
+    }
+
+    .post-input {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .post-actions {
+        gap: 8px;
+    }
+
+    .post-actions button {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    .post-actions .publish {
+        margin-left: 0;
+    }
+
+    .moment {
+        flex: 0 0 180px;
+        min-width: 180px;
+    }
+}
